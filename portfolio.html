@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=screen_search_desktopmobile_codecloud_lock" />
+    <style>
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 200,
+  'GRAD' 0,
+  'opsz' 24
+}
+</style>
+<style>
+    
+  </style>
+</head>
+<body>
+    <nav class="nav bar">
+         <a href="#" class="brand">Portfolio</a>
+         <div class="div">
+          <a href="#home">1</a>
+         <a href="#home" class="aa home">home</a>
+         <a href="#project"class="aa project">projects</a>
+         <a href="#about" class="aa about">about</a>
+         <a href="#contact" class="aa contact">contact</a>
+         <span class="under-line"></span>
+        </div>
+        </nav>
+
+        <div class="asd"></div>
+        <div class="main">
+                <div class="name">
+                    <p>hello<span>,</span></p>
+                    <p>i'm Sai Kumar</p>
+                    <p>Software Developer</p>
+                   <a href="#"><button class="pro-btn">Projects</button></a>
+                   <a href="#"><button class="res-btn">My resume</button></a>
+                </div>
+
+                <div class="pic">
+                  <img src="Web_Photo_Editor.png" alt="">
+                </div>
+        </div>
+        <div class="course-bar">
+          <ul>
+            <li>
+              <div class="hover-box">JAVA
+                <div class="comment">
+                  <h3>JAVA</h3>
+                  <div class="progress-bar"><div class="java-Score"></div></div><div>70%</div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="hover-box">HTML
+                <div class="comment">
+                  <h3>HTML</h3>
+                  <div class="progress-bar"><div class="html-Score"></div></div><div>80%</div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="hover-box">CSS
+                <div class="comment">
+                  <h3>CSS</h3>
+                  <div class="progress-bar"><div class="css-Score"></div></div><div>60%</div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="hover-box">JAVASCRIPT
+                <div class="comment">
+                  <h3>JAVASCRIPT</h3>
+                  <div class="progress-bar"><div class="js-Score"></div></div><div>70%</div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="hover-box">SQL
+                <div class="comment">
+                  <h3>SQL</h3>
+                  <div class="progress-bar"><div class="sql-Score"></div></div><div>90%</div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="hover-box">GIT
+                <div class="comment">
+                <h3>GIT</h3>
+                  <div class="progress-bar"><div class="git-Score"></div></div><div>50%</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="role-about">
+          <div class="role">
+            <table >
+            <tr>
+              <td>
+          <span class="material-symbols-outlined aa">screen_search_desktop</span>
+          <span>Website Developer</span>
+            </td></tr>
+            <tr>
+              <td>
+          <span class="material-symbols-outlined aa">mobile_code</span>
+          <span>App Developer</span>
+            </td>
+          </tr>
+            <tr>
+              <td>
+          <span class="material-symbols-outlined aa">cloud_lock</span>
+          Website Hosting
+           </td>
+           </tr>
+          </table>
+          </div>
+          <div class="about">
+            <div id="#home" class="head">about me</div>
+            <p >I’m a passionate and detail-oriented Java Full Stack developer currently pursuing advanced training to deepen my expertise in both front-end and back-end technologies. I hold a B.Tech degree and have a strong foundation in Java, object-oriented programming, and web development. My learning approach is hands-on and iterative—I enjoy solving real-world problems through clean code and thoughtful design.</p>
+          </div>
+        </div>
+
+      <div class="java-float">
+        
+      </div>
+
+          <script>
+            let a=document.querySelectorAll('.hover-box');
+            a.forEach(el =>{
+                  move(el);
+            }
+            );
+    function move(el){
+     el.addEventListener('mouseover',()=>{
+      let g=event.clientX;
+       if((innerWidth-g)<230){
+         document.querySelectorAll('.comment').forEach(el=>{
+            el.classList.add('comm');
+         })
+       }
+       else{
+        document.querySelectorAll('.comment').forEach(el=>{
+            el.classList.remove('comm');
+         })
+       }
+     
+     });
+      // 
+      
+    }
+  </script>
+        
+    
+</body>
+</html>
