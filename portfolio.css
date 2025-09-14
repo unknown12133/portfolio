@@ -274,14 +274,14 @@ td{
       width: max-content;
       min-width: 200px;
       max-width: 250px;
-      visibility: hidden;
+      display:none;
    
       transition: opacity 0.3s ease, transform 0.3s ease;
       z-index: 10;
     }
 
     .hover-box:hover .comment {
-      visibility: visible;
+      display:block;
       left: auto;
     
       transform: translateY(0); 
@@ -340,6 +340,7 @@ td{
      .js-Score{width: 70%; background-color: rgb(176, 183, 82);}
      .sql-Score{width: 90%; background-color: rgb(121, 103, 163);}
      .git-Score{width: 50%; background-color: rgb(184, 65, 134);}
+
 
 
 
