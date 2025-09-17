@@ -139,7 +139,6 @@
     function move(el){
      el.addEventListener('mouseover',()=>{
       let g=event.clientX;
-      if(innerWidth>400){
        if((innerWidth-g)<230){
          document.querySelectorAll('.comment').forEach(el=>{
             el.classList.add('comm');
@@ -150,27 +149,9 @@
             el.classList.remove('comm');
          })
        }
-      }
-      else{
-         document.querySelectorAll('.comment').forEach(el=>{
-           if(g<130){
-            el.style.left='0px';
-           }
-           else if((innerWidth-g)<130){
-             el.style.right='0px';
-             el.style.left='-260px';
-           }
-           else{
-                el.style.left='-130px';
-                el.style.right='0px';
-           }
-
-         })
-      }
-     });
-      // 
-      
+      })
     }
+     
   </script>
         
     

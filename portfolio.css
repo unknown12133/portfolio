@@ -317,16 +317,7 @@ td{
         height: 15px;
         border-radius: 10px 10px 10px 10px;
     }
-    /* .progress-bar::after{
-        content: "70%";
-        display: block;
-        width:10px;
-        font-weight: 700;
-        height: 20px;
-        position: relative;
-        left: 104%;
-        bottom: 17px;
-    } */
+    
      .progress-bar+div{
         display: inline;
         position: relative;
